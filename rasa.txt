@@ -1,0 +1,33 @@
+Chapter 1: Intro
+Exploring Rasa
+Rasa has three major components that work together to create contextual assistants:
+Note: As of Dec 2019, Rasa Core is now known as dialogue management, to more accurately 
+desdribe its function. Together, the NLU and dialogue management libraries make up Rasa 
+Open Source.
+Rasa NLU
+Rasa NLU is like the “ear” of your assistant—it helps your assistant understand what’s 
+being said. Rasa NLU takes user input in the form of unstructured human language and 
+extracts structured data in the form of intents and entities. 
+● Intents are labels that represent the goal, or meaning, of a user’s specific input. 
+For example, the message ‘Hello’ could have the label ‘greet’ because the 
+meaning of this message is a greeting. 
+● Entities are important keywords that an assistant should take note of. For 
+example, the message ‘My name is Juste’ has the name ‘Juste’ in it. An assistant 
+should extract the name and remember it throughout the conversation to keep the 
+interaction natural. 
+○ Entity extraction is achieved by training a named entity recognition model 
+to identify and extract the entities (in this example, names) for 
+unstructured user messages
+Rasa Core
+Core is Rasa’s dialogue management component. It decides how an assistant should 
+respond based on 1) the state of the conversation and 2) the context. Rasa Core learns 
+by observing patterns in conversational data between users and an assistant. 
+Rasa X
+Rasa X is a toolset for developers to build, improve and deploy contextual assistants with 
+the Rasa framework. You can use Rasa X to:
+- View and annotate conversations
+- Get feedback from testers
+- Version and manage models
+With Rasa X, you can share your assistant with real users and collect the conversations 
+they have with the assistant, allowing you to improve your assistant without interrupting 
+the assistant running in production.
